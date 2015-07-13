@@ -115,7 +115,7 @@ body { font-family: 'Montserrat', sans-serif;  -webkit-font-smoothing: antialias
 	-webkit-appearance:none;
 }
 .signup{
-	position: relative;	
+	position: relative;
 }
 .signup:after{
 	content: "";
@@ -180,23 +180,23 @@ body { font-family: 'Montserrat', sans-serif;  -webkit-font-smoothing: antialias
 	height: 605px;
 }
 .fader .flex-control-paging li a {
-	width: 11px; 
-	height: 11px; 
-	display: block; 
+	width: 11px;
+	height: 11px;
+	display: block;
 	background: #485762; /* Change colour of iphone nav dots */
-	cursor: pointer; 
-	text-indent: -9999px; 
+	cursor: pointer;
+	text-indent: -9999px;
 	border-radius: 20px;
 	-webkit-transition: all 300ms ease-in-out;
 	-moz-transition: all 300ms ease-in-out;
 	-ms-transition: all 300ms ease-in-out;
 	-o-transition: all 300ms ease-in-out;
-	transition: all 300ms ease-in-out; 
+	transition: all 300ms ease-in-out;
 }
-.fader .flex-control-paging li a:hover { 
+.fader .flex-control-paging li a:hover {
 	background: #5a6c79; /* Change colour of iphone nav dots on hover */
 }
-.fader .flex-control-paging li a.flex-active { 
+.fader .flex-control-paging li a.flex-active {
 	background: #0ca2d9; /* Change colour of iphone nav dots when active */
 	cursor: default;
 }
@@ -207,8 +207,8 @@ body { font-family: 'Montserrat', sans-serif;  -webkit-font-smoothing: antialias
 	background: #293034; /* Adjust Background colour of Main Area */
 	color: #bbc7d1; /* Adjust colour of Main Text */
 }
-.main { 
-	padding: 80px 0 100px; 
+.main {
+	padding: 80px 0 100px;
 }
 .main-container h2{
 	color: #f3f8fc;
@@ -235,23 +235,23 @@ body { font-family: 'Montserrat', sans-serif;  -webkit-font-smoothing: antialias
 	width: 244px;
 }
 .quote .flex-control-paging li a {
-	width: 11px; 
-	height: 11px; 
-	display: block; 
+	width: 11px;
+	height: 11px;
+	display: block;
 	background: #485762; /* Change colour of iphone nav dots */
-	cursor: pointer; 
+	cursor: pointer;
 	text-indent: -9999px;
-	border-radius: 20px; 
+	border-radius: 20px;
 	-webkit-transition: all 300ms ease-in-out;
 	-moz-transition: all 300ms ease-in-out;
 	-ms-transition: all 300ms ease-in-out;
 	-o-transition: all 300ms ease-in-out;
 	transition: all 300ms ease-in-out;
 }
-.quote .flex-control-paging li a:hover { 
+.quote .flex-control-paging li a:hover {
 	background: #5a6c79; /* Change colour of iphone nav dots on hover */
 }
-.quote .flex-control-paging li a.flex-active { 
+.quote .flex-control-paging li a.flex-active {
 	background: #f3f8fc;  /* Change colour of iphone nav dots when active */
 	cursor: default;
 	}
@@ -265,7 +265,7 @@ body { font-family: 'Montserrat', sans-serif;  -webkit-font-smoothing: antialias
 
 /* ==========================================================================
    FOOTER LOGO
-   ========================================================================== */ 
+   ========================================================================== */
 .footer-container h1{
 	font-size: 2em;
 	position: relative;
@@ -302,8 +302,8 @@ body { font-family: 'Montserrat', sans-serif;  -webkit-font-smoothing: antialias
 	color: #fbfdff; /* Change colour of footer links on hover */
 }
 .footer-container footer {
-	color: #fff; 
-	padding: 20px 0; 
+	color: #fff;
+	padding: 20px 0;
 }
 
 
@@ -315,9 +315,9 @@ body { font-family: 'Montserrat', sans-serif;  -webkit-font-smoothing: antialias
 	.fader .flexslider1{ top: 89px;; left: 209px; margin-right: 0; margin-left: 0; }
 	.fader{ padding-bottom: 348px;  margin: 0; background: none;}
 	.fader:before {
-		background: url(../img/iphone.png) 0 0; /*Image of iphone 5 in hand */ 
+		background: url(../img/iphone.png) 0 0; /*Image of iphone 5 in hand */
 		background-size: 100%;
-		left: -40px; 
+		left: -40px;
 		width: 593px;
 		height: 782px;
 		top: 0px;
@@ -330,10 +330,10 @@ body { font-family: 'Montserrat', sans-serif;  -webkit-font-smoothing: antialias
 		/* on retina, use image that's scaled by 2 */
 	.fader:before {
 		background: url(../img/iphone@2x.png) 0 0; /*Image of iphone 5 in hand */
-		background-size: 593px 782px; 
+		background-size: 593px 782px;
 	}
 	}
-		
+
 }
 @media only screen and (min-width: 768px) {
     .main-container section{ width: 25%; float: left; margin-right: 12%; }
@@ -356,7 +356,7 @@ body { font-family: 'Montserrat', sans-serif;  -webkit-font-smoothing: antialias
 	.header-container { padding-top: 120px; }
 	.fader .flexslider1{ left: 9px; }
 	.fader:before{ content: ""; position: absolute; background-position: 0 0; width: 593px; height: 782px; left: -240px;top: 0px; }
-	
+
 }
 @media only screen and (min-width: 1140px) {
     .wrapper { width: 1026px; /* 1140px - 10% for margins */ margin: 0 auto; }
