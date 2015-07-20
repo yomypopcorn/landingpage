@@ -122,8 +122,39 @@ h1.logo {
   background-color: lightblue;
   border-radius: 1px;
 
-  background-image: url(http://media.giphy.com/media/KYOD96tSm8Ovm/giphy.gif);
+  background-image: url(../img/screenshot-1.png);
   background-position: center center;
+  background-size: 252px;
+}
+
+.phone-screen {
+  overflow: hidden;
+}
+
+.phone-screen figure img {
+  width: 25%;
+  float: left;
+}
+
+.phone-screen figure {
+  position: relative;
+  width: 400%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 30s slidy infinite;
+}
+
+@keyframes slidy {
+0% { left: 0%; }
+25% { left: 0%; }
+30% { left: -100%; }
+50% { left: -100%; }
+55% { left: -200%; }
+80% { left: -200%; }
+85% { left: -300%; }
+100% { left: 0%; }
 }
 
 .therest {
