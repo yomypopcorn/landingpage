@@ -132,29 +132,27 @@ h1.logo {
 }
 
 .phone-screen figure img {
-  width: 25%;
+  width: 33.3333333%;
   float: left;
 }
 
 .phone-screen figure {
   position: relative;
-  width: 400%;
+  width: 300%;
   margin: 0;
   left: 0;
   text-align: left;
   font-size: 0;
-  animation: 30s slidy infinite;
+  animation: 25s slide infinite;
 }
 
-@keyframes slidy {
+@keyframes slide {
   0% { left: 0%; }
-  30% { left: 0%; }
-  32% { left: -100%; }
-  50% { left: -100%; }
-  52% { left: -200%; }
-  80% { left: -200%; }
-  82% { left: -300%; }
-  98% { left: -300%; }
+  32% { left: 0%; }
+  33% { left: -100%; }
+  65% { left: -100%; }
+  66% { left: -200%; }
+  99% { left: -200%; }
   100% { left: 0%; }
 }
 
