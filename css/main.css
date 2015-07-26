@@ -190,6 +190,16 @@ h1.logo {
   background-color: #8CC152;
 }
 
+.how-to-first {
+  position: absolute;
+  top: 90%;
+  left: 143px;
+  font-size: 40px;
+  color: black;
+  animation: toRight 3s forwards;
+  z-index: 1;
+}
+
 @keyframes slide {
   0% { left: 0%; }
   32% { left: 0%; }
@@ -198,6 +208,17 @@ h1.logo {
   66% { left: -200%; }
   99% { left: -200%; }
   100% { left: 0%; }
+}
+
+@keyframes toRight {
+  0% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(20px);
+    opacity: 0;
+  }
 }
 
 @keyframes fadeOut {
