@@ -1,5 +1,6 @@
 jQuery(document).ready(function (){
-  $('.js-animation').click(function(){
+  $('.js-animation').click(function(ev){
+    ev.preventDefault();
     $('html,body').animate({scrollTop: $('.col-phone').offset().top +10},'slow');
     $(this).toggleClass('active');
     $('.help-animation').toggleClass('fadeOut');
