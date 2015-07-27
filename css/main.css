@@ -140,22 +140,11 @@ h1.logo {
   background-size: 371px;
 }
 
-.phone-screen {
-  position: absolute;
-  top: 85px;
-  left: 5px;
-  width: 252px;
-  height: 442px;
-  background-color: lightblue;
-  border-radius: 1px;
-
-  background-image: url(../img/screenshot-1.png);
-  background-position: center center;
-  background-size: 252px;
-}
-
-.phone-screen {
-  overflow: hidden;
+.phone.android::before {
+  top: 0px;
+  left: -31px;
+  background-size: 345px;
+  background-image: url('../img/nexus5.png');
 }
 
 .phone::after {
@@ -170,14 +159,68 @@ h1.logo {
   background-size: 371px;
 }
 
-.phone-screen figure img {
-  width: 33.3333333%;
-  float: left;
+.phone.android::after {
+  top: 0px;
+  left: -31px;
+  background-size: 345px;
+  background-image: url('../img/nexus5-glare.png');
 }
 
-.phone-screen figure {
+.phone-screen {
+  overflow: hidden;
+  position: absolute;
+  top: 85px;
+  left: 5px;
+  width: 252px;
+  height: 442px;
+  background-color: lightblue;
+  border-radius: 1px;
+
+  background-image: url(../img/screenshot-1.png);
+  background-position: center center;
+  background-size: 252px;
+}
+
+.phone-screen::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: inset 0 0 10px -2px #000000;
+}
+
+.phone.android .phone-screen::after {
+  box-shadow: inset 0 0 10px -1px #000000;
+}
+
+.phone.android .phone-screen {
+  top: 62px;
+  left: 0;
+  width: 282px;
+  height: 503px;
+  background-image: url(../img/screenshot-1-android.png);
+}
+
+.phone-screen .screenshots .screenshot {
+  width: 33.3333333%;
+  float: left;
+  height: 100%;
+}
+
+.phone .screenshot.screenshot-1 { background-image: url('../img/screenshot-1.png'); }
+.phone .screenshot.screenshot-2 { background-image: url('../img/screenshot-2.png'); }
+.phone .screenshot.screenshot-3 { background-image: url('../img/screenshot-3.png'); }
+
+.phone.android .screenshot.screenshot-1 { background-image: url('../img/screenshot-1-android.png'); }
+.phone.android .screenshot.screenshot-2 { background-image: url('../img/screenshot-2-android.png'); }
+.phone.android .screenshot.screenshot-3 { background-image: url('../img/screenshot-3-android.png'); }
+
+.phone-screen .screenshots {
   position: relative;
   width: 300%;
+  height: 100%;
   margin: 0;
   left: 0;
   text-align: left;
@@ -235,6 +278,14 @@ h1.logo {
   z-index: 1;
 }
 
+.phone .video video {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 282px;
+  height: 503px;
+}
+
 @keyframes slide {
   0% { left: 0%; }
   32% { left: 0%; }
@@ -269,4 +320,34 @@ h1.logo {
 
 .therest {
   padding-bottom: 20px;
+}
+
+.bubble {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+
+  background-image: url('../img/bubble-sprite.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  background-color: rgba(200, 200, 200, 0.5);
+}
+
+.bubble-text {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  color: #000;
+  text-align: center;
+  background-color: rgba(0, 200, 200, 0.5);
+}
+
+.bubble-text-inner {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #000;
+  text-align: center;
 }

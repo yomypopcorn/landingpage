@@ -56,13 +56,18 @@
             </div>
           </div>
           <div class="col-md-5 col-md-pull-7 col-phone">
-            <div class="phone info-animation">
+            <div class="phone info-animation android">
               <div class="phone-screen">
-              <figure>
-                <img src="./img/screenshot-1.png" alt="" />
-                <img src="./img/screenshot-2.png" alt="" />
-                <img src="./img/screenshot-3.png" alt="" />
-              </figure>
+                <div class="screenshots">
+                  <div class="screenshot screenshot-1"></div>
+                  <div class="screenshot screenshot-2"></div>
+                  <div class="screenshot screenshot-3"></div>
+                </div>
+                <div class="video">
+                  <video id="android-intro">
+                    <source src="videos/android.mp4" />
+                  </video>
+                </div>
               </div>
             </div>
             <div class="phone help-animation fadeOut">
@@ -107,6 +112,8 @@
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+    <script src="http://popcornjs.org/code/dist/popcorn-complete.min.js"></script>
+    <script src="js/instructions-video.js"></script>
     <script src="js/image-swap.js"></script>
     <script src="js/load-gif.js"></script>
     <script>
