@@ -11,6 +11,10 @@ footer {
   font-family: sans-serif;
 }
 
+hr {
+  border-top: 1px solid #AEAFA5;
+}
+
 .turquoise { background-color: #1abc9c; }
 .emerald { background-color: #2ecc71; }
 .peter { background-color: #3498db; }
@@ -86,8 +90,24 @@ h1.logo {
   padding-bottom: 35px;
 }
 
-.social a:hover {
-  color: #FADC66;
+.social a {
+  color: #fff;
+  transition: color 0.25s linear;
+}
+
+.social-twitter a:hover,
+.social-twitter a:active {
+  color: #55ACEE;
+}
+
+.social-facebook a:hover,
+.social-facebook a:active {
+  color: #3A5795;
+}
+
+.social-github a:hover,
+.social-github a:active {
+  color: #000;
 }
 
 .getstarted ol {
@@ -111,10 +131,13 @@ h1.logo {
 .phone::before {
   content: '';
   position: absolute;
-  left: -240px;
+  top: -20px;
+  left: -53px;
   width: 593px;
   height: 782px;
-  background-image: url('../img/iphone.png');
+  background-image: url('../img/iphone-vector.png');
+  background-repeat: no-repeat;
+  background-size: 371px;
 }
 
 .phone-screen {
@@ -133,6 +156,18 @@ h1.logo {
 
 .phone-screen {
   overflow: hidden;
+}
+
+.phone::after {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: -53px;
+  width: 593px;
+  height: 782px;
+  background-image: url('../img/iphone-vector-glare.png');
+  background-repeat: no-repeat;
+  background-size: 371px;
 }
 
 .phone-screen figure img {
