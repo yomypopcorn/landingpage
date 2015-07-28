@@ -149,6 +149,7 @@ h1.logo {
 
 .phone::after {
   content: '';
+  pointer-events: none;
   position: absolute;
   top: -20px;
   left: -53px;
@@ -164,6 +165,70 @@ h1.logo {
   left: -31px;
   background-size: 345px;
   background-image: url('../img/nexus5-glare.png');
+}
+
+.tutorial {
+  position: absolute;
+  top: 85px;
+  left: 5px;
+  width: 252px;
+  height: 442px;
+}
+
+.phone.android .tutorial {
+  top: 62px;
+  left: 0;
+  width: 282px;
+  height: 503px;
+}
+
+.tutorial .tutorial-video {
+  display: none;
+}
+
+.tutorial.active .tutorial-video,
+.tutorial.active .tutorial-video video {
+  display: block;
+}
+
+.tutorial .tutorial-video video {
+  display: none;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 282px;
+  height: 503px;
+}
+
+.tutorial .tutorial-start {
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 130px;
+  cursor: pointer;
+  transition: color 0.3s ease-in;
+  color: rgba(250, 255, 255, 0.3);
+}
+
+.tutorial .tutorial-start:hover {
+  color: rgba(250, 220, 102, 0.9);
+}
+
+.tutorial .tutorial-start p {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.tutorial.active .tutorial-start {
+  display: none;
 }
 
 .phone-screen {
@@ -278,14 +343,6 @@ h1.logo {
   z-index: 1;
 }
 
-.phone .video video {
-  position: absolute;
-  top: 0px;
-  left: 0;
-  width: 282px;
-  height: 503px;
-}
-
 @keyframes slide {
   0% { left: 0%; }
   32% { left: 0%; }
@@ -331,7 +388,17 @@ h1.logo {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
-  background-color: rgba(200, 200, 200, 0.5);
+
+  opacity: 0;
+  transition: opacity 0.2s ease-in;
+}
+
+.bubble.overlay {
+  background-image: none;
+  background-color: rgba(250, 220, 102, 0.95);
+  width: 100%;
+  height: 100%;
+  border-radius: 1px;
 }
 
 .bubble-text {
@@ -340,14 +407,39 @@ h1.logo {
   height: 200px;
   color: #000;
   text-align: center;
-  background-color: rgba(0, 200, 200, 0.5);
+  font-size: 15px;
+
+  opacity: 0;
+  transition: opacity 0.2s ease-in;
+}
+
+.bubble-text.overlay {
+  width: 100%;
+  height: 100%;
 }
 
 .bubble-text-inner {
   position: absolute;
-  width: 100%;
+  width: 160px;
   top: 50%;
-  transform: translateY(-50%);
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: #000;
   text-align: center;
+}
+
+.bubble-text.overlay .bubble-text-inner {
+  width: 80%;
+}
+
+.bubble-text .btn {
+  display: none;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 30px;
+}
+
+.bubble-text.overlay .btn {
+  bottom: 80px;
 }
