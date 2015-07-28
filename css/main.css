@@ -140,7 +140,99 @@ h1.logo {
   background-size: 371px;
 }
 
+.phone.android::before {
+  top: 0px;
+  left: -31px;
+  background-size: 345px;
+  background-image: url('../img/nexus5.png');
+}
+
+.phone::after {
+  content: '';
+  pointer-events: none;
+  position: absolute;
+  top: -20px;
+  left: -53px;
+  width: 593px;
+  height: 782px;
+  background-image: url('../img/iphone-vector-glare.png');
+  background-repeat: no-repeat;
+  background-size: 371px;
+}
+
+.phone.android::after {
+  top: 0px;
+  left: -31px;
+  background-size: 345px;
+  background-image: url('../img/nexus5-glare.png');
+}
+
+.tutorial {
+  position: absolute;
+  top: 85px;
+  left: 5px;
+  width: 252px;
+  height: 442px;
+}
+
+.phone.android .tutorial {
+  top: 62px;
+  left: 0;
+  width: 282px;
+  height: 503px;
+}
+
+.tutorial .tutorial-video {
+  display: none;
+}
+
+.tutorial.active .tutorial-video,
+.tutorial.active .tutorial-video video {
+  display: block;
+}
+
+.tutorial .tutorial-video video {
+  display: none;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 282px;
+  height: 503px;
+}
+
+.tutorial .tutorial-start {
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 130px;
+  cursor: pointer;
+  transition: color 0.3s ease-in;
+  color: rgba(250, 255, 255, 0.3);
+}
+
+.tutorial .tutorial-start:hover {
+  color: rgba(250, 220, 102, 0.9);
+}
+
+.tutorial .tutorial-start p {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.tutorial.active .tutorial-start {
+  display: none;
+}
+
 .phone-screen {
+  overflow: hidden;
   position: absolute;
   top: 85px;
   left: 5px;
@@ -154,30 +246,46 @@ h1.logo {
   background-size: 252px;
 }
 
-.phone-screen {
-  overflow: hidden;
-}
-
-.phone::after {
+.phone-screen::after {
   content: '';
   position: absolute;
-  top: -20px;
-  left: -53px;
-  width: 593px;
-  height: 782px;
-  background-image: url('../img/iphone-vector-glare.png');
-  background-repeat: no-repeat;
-  background-size: 371px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: inset 0 0 10px -2px #000000;
 }
 
-.phone-screen figure img {
+.phone.android .phone-screen::after {
+  box-shadow: inset 0 0 10px -1px #000000;
+}
+
+.phone.android .phone-screen {
+  top: 62px;
+  left: 0;
+  width: 282px;
+  height: 503px;
+  background-image: url(../img/screenshot-1-android.png);
+}
+
+.phone-screen .screenshots .screenshot {
   width: 33.3333333%;
   float: left;
+  height: 100%;
 }
 
-.phone-screen figure {
+.phone .screenshot.screenshot-1 { background-image: url('../img/screenshot-1.png'); }
+.phone .screenshot.screenshot-2 { background-image: url('../img/screenshot-2.png'); }
+.phone .screenshot.screenshot-3 { background-image: url('../img/screenshot-3.png'); }
+
+.phone.android .screenshot.screenshot-1 { background-image: url('../img/screenshot-1-android.png'); }
+.phone.android .screenshot.screenshot-2 { background-image: url('../img/screenshot-2-android.png'); }
+.phone.android .screenshot.screenshot-3 { background-image: url('../img/screenshot-3-android.png'); }
+
+.phone-screen .screenshots {
   position: relative;
   width: 300%;
+  height: 100%;
   margin: 0;
   left: 0;
   text-align: left;
@@ -269,4 +377,69 @@ h1.logo {
 
 .therest {
   padding-bottom: 20px;
+}
+
+.bubble {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+
+  background-image: url('../img/bubble-sprite.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+
+  opacity: 0;
+  transition: opacity 0.2s ease-in;
+}
+
+.bubble.overlay {
+  background-image: none;
+  background-color: rgba(250, 220, 102, 0.95);
+  width: 100%;
+  height: 100%;
+  border-radius: 1px;
+}
+
+.bubble-text {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  color: #000;
+  text-align: center;
+  font-size: 15px;
+
+  opacity: 0;
+  transition: opacity 0.2s ease-in;
+}
+
+.bubble-text.overlay {
+  width: 100%;
+  height: 100%;
+}
+
+.bubble-text-inner {
+  position: absolute;
+  width: 160px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #000;
+  text-align: center;
+}
+
+.bubble-text.overlay .bubble-text-inner {
+  width: 80%;
+}
+
+.bubble-text .btn {
+  display: none;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 30px;
+}
+
+.bubble-text.overlay .btn {
+  bottom: 80px;
 }

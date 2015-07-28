@@ -58,13 +58,25 @@
             </div>
           </div>
           <div class="col-md-5 col-md-pull-7 col-phone">
-            <div class="phone info-animation">
+            <div class="phone android">
               <div class="phone-screen">
-              <figure>
-                <img src="./img/screenshot-1.png" alt="" />
-                <img src="./img/screenshot-2.png" alt="" />
-                <img src="./img/screenshot-3.png" alt="" />
-              </figure>
+                <div class="screenshots">
+                  <div class="screenshot screenshot-1"></div>
+                  <div class="screenshot screenshot-2"></div>
+                  <div class="screenshot screenshot-3"></div>
+                </div>
+              </div>
+              <div class="tutorial">
+                <div class="tutorial-start">
+                  <p><i class="fa fa-play-circle-o"></i></p>
+                </div>
+                <div class="tutorial-video">
+                  <video id="android-intro">
+                    <source src="videos/android.mp4" />
+                    <source src="videos/android.webm" />
+                    <source src="videos/android.ogv" />
+                  </video>
+                </div>
               </div>
             </div>
           </div>
@@ -99,6 +111,8 @@
         <p>Credits: FlatPhone iPhone mockup by <a href="http://www.pixeden.com/psd-mock-up-templates/iphone-5-psd-flat-design-mockup">Pixeden</a>.</p>
       </footer>
     </div>
+    <script src="http://popcornjs.org/code/dist/popcorn-complete.min.js"></script>
+    <script src="js/instructions-video.js"></script>
     <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
