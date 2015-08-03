@@ -122,7 +122,7 @@
     start: 0.1,
     pauseDelay: 0,
     top: 65,
-    left: 155,
+    left: 140,
     angle: 0,
     text: 'Click the <i class="fa fa-plus"></i> button to add a contact.'
   });
@@ -166,27 +166,27 @@
   vid.intro({
     start: 26.75,
     pauseDelay: 0,
-    top: 20,
-    left: 248,
-    angle: 12,
+    top: 230,
+    left: 120,
+    angle: 102,
     text: 'Add your first show.'
   });
 
   vid.intro({
     start: 31,
     pauseDelay: 3,
-    top: 79,
-    left: 248,
-    angle: 65,
+    top: 160,
+    left: 120,
+    angle: 105,
     text: 'Search for a title.'
   });
 
   vid.intro({
     start: 34.5,
     pauseDelay: 0,
-    top: 162,
-    left: 248,
-    angle: 83,
+    top: 205,
+    left: 71,
+    angle: 157,
     text: 'Click "Subscribe".'
   });
 
@@ -220,9 +220,9 @@
   vid.intro({
     start: 48,
     pauseDelay: 7,
-    top: 90,
-    left: 270,
-    angle: 22,
+    top: -90,
+    left: 145,
+    angle: -27,
     text: 'This is your feed. New episodes will appear at the top.'
   });
 
